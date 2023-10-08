@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/fitted-scoop/Marshmallow-H
 import CosmonautMeditates from '../../assets/clothes/fitted-scoop/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/fitted-scoop/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/fitted-scoop/Snake.jpg'
+import BigButterfly from '../../assets/clothes/fitted-scoop/BigButterfly.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, navy, red, turquoise, heather-grey, purple and more). Scoop neck, cap sleeves, and fitted cut add up to a fashionably casual tee. Slim fit, so consider going a size up if that's not your thing. Model shown is 5'11'' / 180cm tall and wearing size Medium. Solid colors are 100% cotton; heathered fabrics are 90% cotton, 10% polyester. Cold wash and hang dry to preserve your print. The third party printer of this product is evaluated according to International Labor Organization standards"
@@ -50,6 +51,13 @@ const FittedScoopData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

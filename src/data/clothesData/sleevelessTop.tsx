@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/sleevelessTop/Marshmallow-
 import CosmonautMeditates from '../../assets/clothes/sleevelessTop/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/sleevelessTop/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/sleevelessTop/Snake.jpg'
+import BigButterfly from '../../assets/clothes/sleevelessTop/BigButterfly.jpg'
 
 const ItemDescription =
   'Chose back color(black, white).Slightly sheer 100% polyester chiffon front panel with silky handfeel. Option of black or white 96% polyester, 4% elastane soft jersey back panel. Front panel is sublimation printed allowing fabric to stay soft and drapey. Loose flowy fit. Garment fully constructed and printed in the USA'
@@ -50,6 +51,13 @@ const SleevelessTopData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

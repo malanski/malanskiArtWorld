@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/premium-t-shirt/Marshmallo
 import CosmonautMeditates from '../../assets/clothes/premium-t-shirt/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/premium-t-shirt/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/premium-t-shirt/Snake.jpg'
+import BigButterfly from '../../assets/clothes/premium-t-shirt/BigButterfly.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, white, heather grey, dark grey). Regular fit. Model shown is 6' / 183 cm tall and wearing size Medium. Heavyweight 5.3 oz. / 180 gsm fabric, solid color t-shirts are 100% cotton, heathered and marled fabrics are 85% cotton/15% polyester. Taped shoulder seams, double-needle hems, and self-fabric neck bind for maximum durability. Preshrunk. The third party printer of this product is evaluated according to International Labor Organization standards.The printer of this product sources blanks from manufacturers committed to improving cotton farming practices with the Better Cotton Initiative"
@@ -50,6 +51,13 @@ const PremiumTShirtData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

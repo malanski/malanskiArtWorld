@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/clothes/a-line-dress/Geisha-Dancing-
 import MarshmallowHibiscus from '../../assets/clothes/a-line-dress/Marshmallow-Hibiscus.jpg'
 import BeeSweet from '../../assets/clothes/a-line-dress/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/a-line-dress/Snake.jpg'
+import BigButterfly from '../../assets/clothes/a-line-dress/BigButterfly.jpg'
 
 const ItemDescription =
   'Loose swing shape for an easy, flowy fit. Sizes run large, so order a size down from your usual. Print covers entire front and back panel with your chosen design, by an independent artist. 97% polyester, 3% elastane woven dress fabric with silky handfeel, Note that due to the production process, the placement of the print may vary slightly from the preview, The third party printer of this product is evaluated according to International Labor Organization standards'
@@ -42,6 +43,13 @@ const ALineDressData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

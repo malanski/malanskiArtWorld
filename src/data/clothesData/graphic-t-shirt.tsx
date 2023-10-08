@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/graphic-t-shirt/Marshmallo
 import CosmonautMeditates from '../../assets/clothes/graphic-t-shirt/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/graphic-t-shirt/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/graphic-t-shirt/Snake.jpg'
+import BigButterfly from '../../assets/clothes/graphic-t-shirt/BigButterfly.jpg'
 
 const ItemDescription =
   "Edge-to-edge front print makes a big, bold, undeniable statement. Regular fit and soft feel. Male model shown is 6'1'' / 186 cm tall and wearing size Medium. Female model shown is 5'5''/ 167 cm tall and wearing size Small. Printed front panel is 96% polyester/4% spandex. Solid color back panel, sleeves and neck bind are 100% cotton. Sublimation transfer technique prints crisp, vivid colors. Print placement may vary slightly from preview"
@@ -50,6 +51,13 @@ const GraphicTShirtData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

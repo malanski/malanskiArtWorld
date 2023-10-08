@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/clothes/t-shirt-dress/Geisha-Dancing
 import MarshmallowHibiscus from '../../assets/clothes/t-shirt-dress/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/clothes/t-shirt-dress/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/clothes/t-shirt-dress/Snake.jpg'
+import BigButterfly from '../../assets/clothes/t-shirt-dress/BigButterfly.jpg'
 
 const ItemDescription =
   'Graphic T-shirt Dresses feature your chosen design, by an independent artist. Sublimation printed 96% polyester, 4% elastane front panel.  Solid color 100% cotton back/sleeves/rib. Loose casual fit. Graphic T-Shirt Dresses are made and printed in the USA'
@@ -42,6 +43,13 @@ const TShirtDressData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

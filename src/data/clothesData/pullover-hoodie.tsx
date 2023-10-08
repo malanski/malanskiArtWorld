@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/pullover-hoodie/Marshmallo
 import CosmonautMeditates from '../../assets/clothes/pullover-hoodie/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/pullover-hoodie/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/pullover-hoodie/Snake.jpg'
+import BigButterfly from '../../assets/clothes/pullover-hoodie/BigButterfly.jpg'
 
 const ItemDescription =
   'Chose artwork print location on front or back. Chose colors(black, white, heather oatmeal, charcoal, grey, bue, dark blue, pale pink). Note: If you like your hoodies baggy go 2 sizes up. Heavyweight 8.25 oz. (~280 gsm) cotton-rich fleece. Solid colors are 80% cotton, 20% polyester. Heather Grey is 70% cotton, 30% polyester. Charcoal Heather is 60% cotton, 40% polyester. Front pouch pocket, matching drawstring and rib cuffs. The third party printer of this product is evaluated according to International Labor Organization standards. The printer of this product sources blanks from manufacturers committed to improving cotton farming practices with the Better Cotton Initiative'
@@ -50,6 +51,13 @@ const PulloverHoodieData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

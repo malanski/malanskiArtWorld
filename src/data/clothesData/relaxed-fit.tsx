@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/pullover-hoodie/Marshmallo
 import CosmonautMeditates from '../../assets/clothes/pullover-hoodie/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/pullover-hoodie/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/pullover-hoodie/Snake.jpg'
+import BigButterfly from '../../assets/clothes/pullover-hoodie/BigButterfly.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, white, dark blue, charcoal, grey, navy, purple, creme, turquoise). Hang loose in this comfy tee with a wide scoop neck and generous short sleeves. Boxy, oversized fit. Model shown is 5'11'' / 180 cm tall and wearing size Small.Solid colors are 100% cotton; heather grey is 90% cotton 10% polyester, charcoal heather is 52% Cotton 48% Polyester. The third party printer of this product is evaluated according to International Labor.Organization standards"
@@ -50,6 +51,13 @@ const RelaxedFitData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

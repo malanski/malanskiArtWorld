@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/baseball/Marshmallow-Hibis
 import CosmonautMeditates from '../../assets/clothes/baseball/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/baseball/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/baseball/Snake.jpg'
+import BigButterfly from '../../assets/clothes/baseball/BigButterfly.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose sleeves colors(black, navy, red, blue, asphalt, green) That vintage athletic look, with contrast 3/4 baseball sleeves and collar. Slim fit, but if that´s not your thing, order a size up. Male model shown is 6'1''/ 185 cm tall and wearing size Large. 52% ringspun cotton and 48% polyester. The third party printer of this product is evaluated according to International Labor Organization standards. The printer of this product sources blanks from manufacturers that are participating members of the Fair Labor Association"
@@ -50,6 +51,13 @@ const BaseballData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Big Butterfly ${category}`,
+    image: BigButterfly,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,
