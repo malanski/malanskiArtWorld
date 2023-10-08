@@ -1,11 +1,12 @@
 import ALineDressData from './clothesData/a-line-dress'
 import ActiveTShirtData from './clothesData/active-tshirt'
-import BaseballData from './clothesData/basebal'
+import BaseballData from './clothesData/baseball'
 import BucketHatData from './clothesData/bucket-hat'
 import CapData from './clothesData/cap'
 import ChiffonTopData from './clothesData/chiffon-top'
 import EssentialTShirtData from './clothesData/essential-t-shirt'
 import FittedScoopData from './clothesData/fitted-scoop'
+import FittedTShirtData from './clothesData/fitted-t-shirt'
 import GraphicTShirtData from './clothesData/graphic-t-shirt'
 import LeggingsData from './clothesData/leggings'
 import LightweightHoodieData from './clothesData/lightweight-hoodie'
@@ -20,6 +21,7 @@ import ScoopTShirtData from './clothesData/scoop-t-shirt'
 import SleevelessTopData from './clothesData/sleevelessTop'
 import TShirtData from './clothesData/t-shirt'
 import TShirtDressData from './clothesData/t-shirt-dress'
+import TankTopData from './clothesData/tank-top'
 import VNeckData from './clothesData/v-neck-fitted'
 import AllPrintToteData from './objectsData/all-print-tote-bag'
 import ApronData from './objectsData/apron'
@@ -51,6 +53,7 @@ const clothesData = [
   ...ChiffonTopData,
   ...EssentialTShirtData,
   ...FittedScoopData,
+  ...FittedTShirtData,
   ...GraphicTShirtData,
   ...LeggingsData,
   ...LightweightHoodieData,
@@ -65,6 +68,7 @@ const clothesData = [
   ...SleevelessTopData,
   ...TShirtDressData,
   ...TShirtData,
+  ...TankTopData,
   ...VNeckData,
 ]
 const objectsData = [
@@ -90,4 +94,52 @@ const objectsData = [
   ...ZipperPouchData,
 ]
 
-export { clothesData, objectsData }
+export {
+  clothesData,
+  ALineDressData,
+  ActiveTShirtData,
+  BaseballData,
+  BucketHatData,
+  CapData,
+  ChiffonTopData,
+  EssentialTShirtData,
+  FittedScoopData,
+  FittedTShirtData,
+  GraphicTShirtData,
+  LeggingsData,
+  LightweightHoodieData,
+  LongSleeveData,
+  LongTShirtData,
+  MiniSkirtData,
+  PremiumTShirtData,
+  PulloverHoodieData,
+  RacerbackData,
+  RelaxedFitData,
+  ScoopTShirtData,
+  SleevelessTopData,
+  TShirtDressData,
+  TShirtData,
+  TankTopData,
+  VNeckData,
+  objectsData,
+  AllPrintToteData,
+  ApronData,
+  BackpackData,
+  BagData,
+  ClockData,
+  ComforterData,
+  DuffleBagData,
+  DuvetData,
+  JigsawData,
+  MagnetData,
+  MugData,
+  PillowData,
+  PinData,
+  PostcardData,
+  ScarfData,
+  ShowerCurtainData,
+  SpiralNotebookData,
+  StickerData,
+  ThrowBlanketData,
+  ZipperPouchData,
+}

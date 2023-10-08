@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const ProductsListPagination = styled.div`
   max-width: 1440px;
   margin: 0;
-  padding: 0;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   h5 {
     text-align: left;
     text-transform: uppercase;
@@ -32,5 +31,15 @@ export const ProductsListPagination = styled.div`
     border-radius: 8px;
     width: 50px;
     display: block;
+  }
+`
+export const CategoryNavigation = styled.div`
+  display: flex;
+  max-width: 1440px;
+
+  a {
+    display: flex;
+
+    width: 250px;
   }
 `
