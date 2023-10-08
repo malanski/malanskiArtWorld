@@ -3,6 +3,41 @@ import { useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
 import { PageStyle } from '../styles'
 import ProductsPagination from '../../components/ProductsPagination'
+import { IntroImages } from '../../components/IntroImages'
+
+import image1 from '../../assets/intro/introDress2.jpg'
+import image2 from '../../assets/intro/introDress1.jpg'
+import image3 from '../../assets/intro/introDress3.jpg'
+import image4 from '../../assets/intro/introDress4.jpg'
+import image5 from '../../assets/intro/introDress5.jpg'
+import image6 from '../../assets/intro/introDress6.jpg'
+import image7 from '../../assets/intro/introDress7.jpg'
+import image8 from '../../assets/intro/introDress8.jpg'
+import image9 from '../../assets/intro/backPrint1.jpg'
+import image10 from '../../assets/intro/backPrint2.jpg'
+import image11 from '../../assets/intro/introBlanket.jpg'
+import image12 from '../../assets/intro/introApron.jpg'
+import image13 from '../../assets/intro/introClock.jpg'
+import image14 from '../../assets/intro/introMug.jpg'
+import image15 from '../../assets/intro/introMug2.jpg'
+
+const introImagesArray = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+]
 
 const productsPerPage = 20
 export function Home() {
@@ -15,7 +50,7 @@ export function Home() {
   const currentProducts = allData.slice(indexOfFirstProduct, indexOfLastProduct)
   return (
     <PageStyle>
-      <h2>All products</h2>
+      <IntroImages introImagesArray={introImagesArray} />
       <ProductsPagination
         currentPage={currentPage}
         totalPages={Math.ceil(allData.length / productsPerPage)}
@@ -23,6 +58,8 @@ export function Home() {
           setCurrentPage(page)
         }}
       />
+      <h2>All products</h2>
+
       <ProductList allData={currentProducts} />
     </PageStyle>
   )

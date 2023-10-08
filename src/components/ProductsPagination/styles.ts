@@ -12,7 +12,7 @@ export const ProductsListPagination = styled.div`
   div {
     list-style-type: none;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: start;
     /* width: 50px; */

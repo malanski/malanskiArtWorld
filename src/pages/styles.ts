@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const PageStyle = styled.div`
   /* display: flex;
   place-items: center; */
+  position: relative;
+
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
