@@ -9,6 +9,11 @@ export const PageStyle = styled.div`
   margin: 0 auto;
   text-align: center;
   padding: 8px 2rem;
+
+  h5 {
+    text-align: left;
+    text-transform: uppercase;
+  }
   @media (max-width: 840px) {
     padding: 0.8rem;
   }

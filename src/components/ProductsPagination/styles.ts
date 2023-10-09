@@ -36,10 +36,15 @@ export const ProductsListPagination = styled.div`
 export const CategoryNavigation = styled.div`
   display: flex;
   max-width: 1440px;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  width: 100%;
   a {
-    display: flex;
-
+    /* display: flex; */
+    text-align: center;
     width: 250px;
+    border-bottom: 1px solid white;
+    margin-bottom: 4px;
   }
 `

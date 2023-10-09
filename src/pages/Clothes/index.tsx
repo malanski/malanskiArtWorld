@@ -66,13 +66,8 @@ export function Clothes() {
     TankTopData,
     VNeckData,
   } = productsContext
-  const allData = [...clothesData]
-  const indexOfLastProduct = currentPage * productsPerPage
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage
-  const currentProducts = allData.slice(indexOfFirstProduct, indexOfLastProduct)
-
   const dataSources = [
-    { name: 'Clothes', data: allData },
+    { name: 'Clothes', data: clothesData },
     { name: 'A-Line Dress', data: ALineDressData },
     { name: 'Active T-Shirt', data: ActiveTShirtData },
     { name: 'Baseball', data: BaseballData },
@@ -99,8 +94,13 @@ export function Clothes() {
     { name: 'Tank Top', data: TankTopData },
     { name: 'V-Neck', data: VNeckData },
   ]
-
   const currentDataSource = dataSources[activeDataIndex]
+
+  const allData = [...currentDataSource.data]
+  const indexOfLastProduct = currentPage * productsPerPage
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage
+  const currentProducts = allData.slice(indexOfFirstProduct, indexOfLastProduct)
+
   const toggleDataSource = (index: SetStateAction<number>) => {
     setActiveDataIndex(index)
     console.log(currentDataSource.data.length)
@@ -108,17 +108,20 @@ export function Clothes() {
   return (
     <PageStyle>
       <IntroImages introImagesArray={introImagesArray} />
+      <h5>Categories</h5>
 
       <CategoryNavigation>
         {dataSources.map((source, index) => (
-          <span key={index}>
-            <a
-              title={`Mudar para ${source.name}`}
-              onClick={() => toggleDataSource(index)}
-            >
-              {source.name}
-            </a>
-          </span>
+          <a
+            key={index}
+            title={`Mudar para ${source.name}`}
+            onClick={() => {
+              toggleDataSource(index)
+              setCurrentPage(1)
+            }}
+          >
+            {source.name}
+          </a>
         ))}
       </CategoryNavigation>
 

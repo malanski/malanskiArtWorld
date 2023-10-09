@@ -24,7 +24,6 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
 
   return (
     <ProductsListPagination id="productList">
-      {/* <h5>Páginas</h5> */}
       <div>
         {Array(totalPages)
           .fill(0)
