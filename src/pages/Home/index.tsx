@@ -1,4 +1,4 @@
-import { ProductList } from '../../components/ProductList'
+// import { ProductList } from '../../components/ProductList'
 import { useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
 import { PageStyle } from '../styles'
@@ -20,6 +20,7 @@ import image12 from '../../assets/intro/introApron.jpg'
 import image13 from '../../assets/intro/introClock.jpg'
 import image14 from '../../assets/intro/introMug.jpg'
 import image15 from '../../assets/intro/introMug2.jpg'
+import { ProductCard } from '../../components/ProductCard'
 
 const introImagesArray = [
   image1,
@@ -59,8 +60,10 @@ export function Home() {
         }}
       />
       <h2>All products</h2>
-
-      <ProductList allData={currentProducts} />
+      {allData.map((product, index) => (
+        <ProductCard key={index} allData={currentProducts} data={product} />
+      ))}
+      {/* <ProductList allData={currentProducts} data={product}/> */}
     </PageStyle>
   )
 }

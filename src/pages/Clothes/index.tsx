@@ -1,4 +1,4 @@
-import { ProductList } from '../../components/ProductList'
+// import { ProductList } from '../../components/ProductList'
 import { SetStateAction, useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
 import { PageStyle } from '../styles'
@@ -18,6 +18,7 @@ import image10 from '../../assets/intro/backPrint2.jpg'
 import { IntroImages } from '../../components/IntroImages'
 
 import { CategoryNavigation } from '../../components/ProductsPagination/styles'
+import { ProductCard } from '../../components/ProductCard'
 
 const introImagesArray = [
   image6,
@@ -70,7 +71,7 @@ export function Clothes() {
     { name: 'Clothes', data: clothesData },
     { name: 'A-Line Dress', data: ALineDressData },
     { name: 'Active T-Shirt', data: ActiveTShirtData },
-    { name: 'Baseball', data: BaseballData },
+    { name: 'Baseball T-Shirt', data: BaseballData },
     { name: 'Bucket Hat', data: BucketHatData },
     { name: 'Cap', data: CapData },
     { name: 'Chiffon Top', data: ChiffonTopData },
@@ -114,7 +115,7 @@ export function Clothes() {
         {dataSources.map((source, index) => (
           <a
             key={index}
-            title={`Mudar para ${source.name}`}
+            title={`Only ${source.name}'s`}
             onClick={() => {
               toggleDataSource(index)
               setCurrentPage(1)
@@ -140,7 +141,11 @@ export function Clothes() {
       )}
       <h2>{currentDataSource.name} View</h2>
 
-      <ProductList allData={currentProducts} />
+      {allData.map((product, index) => (
+        <ProductCard key={index} allData={currentProducts} data={product} />
+      ))}
+
+      {/* <ProductList allData={currentProducts} /> */}
     </PageStyle>
   )
 }

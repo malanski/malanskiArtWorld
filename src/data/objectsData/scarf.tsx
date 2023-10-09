@@ -1,4 +1,4 @@
-import RedDragon from '../../assets/objects/postcard/Red-Dragon.jpg'
+import RedDragon from '../../assets/objects/scarf/Red-Dragon.jpg'
 import GeishaDancingFans from '../../assets/objects/scarf/Geisha-Dancing-Fans.jpg'
 import MarshmallowHibiscus from '../../assets/objects/scarf/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/objects/scarf/Cosmonaut-meditates.jpg'

@@ -1,4 +1,4 @@
-import { ProductList } from '../../components/ProductList'
+// import { ProductList } from '../../components/ProductList'
 import { SetStateAction, useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
 import { PageStyle } from '../styles'
@@ -11,6 +11,7 @@ import image14 from '../../assets/intro/introMug.jpg'
 import image15 from '../../assets/intro/introMug2.jpg'
 import { IntroImages } from '../../components/IntroImages'
 import { CategoryNavigation } from '../../components/ProductsPagination/styles'
+import { ProductCard } from '../../components/ProductCard'
 
 const introImagesArray = [image11, image12, image13, image14, image15]
 
@@ -45,26 +46,26 @@ export function Objects() {
   } = productsContext
   const dataSources = [
     { name: 'Objects', data: objectsData },
-    { name: 'A-Line Dress', data: AllPrintToteData },
-    { name: 'Active T-Shirt', data: ApronData },
-    { name: 'Baseball', data: BackpackData },
-    { name: 'Bucket Hat', data: BagData },
-    { name: 'Cap', data: ClockData },
-    { name: 'Chiffon Top', data: ComforterData },
-    { name: 'Essential T-Shirt', data: DuffleBagData },
-    { name: 'Fitted Scoop', data: DuvetData },
-    { name: 'Fitted T-Shirt', data: JigsawData },
-    { name: 'Graphic T-Shirt', data: MagnetData },
-    { name: 'Leggings', data: MugData },
-    { name: 'Lightweight Hoodie', data: PillowData },
-    { name: 'Long Sleeve', data: PinData },
-    { name: 'Long T-Shirt', data: PostcardData },
-    { name: 'Mini Skirt', data: ScarfData },
-    { name: 'Premium T-Shirt', data: ShowerCurtainData },
-    { name: 'Pullover Hoodie', data: SpiralNotebookData },
-    { name: 'Racerback', data: StickerData },
-    { name: 'Relaxed Fit', data: ThrowBlanketData },
-    { name: 'Scoop T-Shirt', data: ZipperPouchData },
+    { name: 'All Print Tote', data: AllPrintToteData },
+    { name: 'Apron', data: ApronData },
+    { name: 'Backpack', data: BackpackData },
+    { name: 'Drawstring Bag', data: BagData },
+    { name: 'Clock', data: ClockData },
+    { name: 'Comforter', data: ComforterData },
+    { name: 'Duffle Bag', data: DuffleBagData },
+    { name: 'Duvet', data: DuvetData },
+    { name: 'Jigsaw Puzzle', data: JigsawData },
+    { name: 'Magnet', data: MagnetData },
+    { name: 'Mug', data: MugData },
+    { name: 'Pillow', data: PillowData },
+    { name: 'Pin', data: PinData },
+    { name: 'Postcard', data: PostcardData },
+    { name: 'Scarf', data: ScarfData },
+    { name: 'Shower Curtain', data: ShowerCurtainData },
+    { name: 'Spiral Notebook', data: SpiralNotebookData },
+    { name: 'Sticker', data: StickerData },
+    { name: 'Throw Blanket', data: ThrowBlanketData },
+    { name: 'Zipper Pouch', data: ZipperPouchData },
   ]
   const currentDataSource = dataSources[activeDataIndex]
 
@@ -86,7 +87,7 @@ export function Objects() {
         {dataSources.map((source, index) => (
           <a
             key={index}
-            title={`Mudar para ${source.name}`}
+            title={`Only ${source.name}'s`}
             onClick={() => {
               toggleDataSource(index)
               setCurrentPage(1)
@@ -111,8 +112,10 @@ export function Objects() {
         ''
       )}
       <h2>{currentDataSource.name}</h2>
-
-      <ProductList allData={currentProducts} />
+      {allData.map((product, index) => (
+        <ProductCard key={index} allData={currentProducts} data={product} />
+      ))}
+      {/* <ProductList allData={currentProducts} /> */}
     </PageStyle>
   )
 }
