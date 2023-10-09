@@ -1,7 +1,7 @@
 // import { ProductList } from '../../components/ProductList'
 import { useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
-import { PageStyle } from '../styles'
+import { PageStyle, ProductListStyle } from '../styles'
 import ProductsPagination from '../../components/ProductsPagination'
 import { IntroImages } from '../../components/IntroImages'
 
@@ -60,9 +60,12 @@ export function Home() {
         }}
       />
       <h2>All products</h2>
-      {allData.map((product, index) => (
-        <ProductCard key={index} allData={currentProducts} data={product} />
-      ))}
+      <ProductListStyle>
+        {allData.map((product, index) => (
+          <ProductCard key={index} allData={currentProducts} data={product} />
+        ))}
+      </ProductListStyle>
+
       {/* <ProductList allData={currentProducts} data={product}/> */}
     </PageStyle>
   )

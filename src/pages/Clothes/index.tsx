@@ -1,7 +1,7 @@
 // import { ProductList } from '../../components/ProductList'
 import { SetStateAction, useContext, useState } from 'react'
 import { ProductsContext } from '../../context/productsContext'
-import { PageStyle } from '../styles'
+import { PageStyle, ProductListStyle } from '../styles'
 import ProductsPagination from '../../components/ProductsPagination'
 
 import image1 from '../../assets/intro/introDress2.jpg'
@@ -140,11 +140,11 @@ export function Clothes() {
         ''
       )}
       <h2>{currentDataSource.name} View</h2>
-
-      {allData.map((product, index) => (
-        <ProductCard key={index} allData={currentProducts} data={product} />
-      ))}
-
+      <ProductListStyle>
+        {allData.map((product, index) => (
+          <ProductCard key={index} allData={currentProducts} data={product} />
+        ))}
+      </ProductListStyle>
       {/* <ProductList allData={currentProducts} /> */}
     </PageStyle>
   )

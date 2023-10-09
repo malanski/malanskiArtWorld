@@ -24,3 +24,25 @@ export const PageStyle = styled.div`
     padding: 0.01rem;
   }
 `
+
+export const ProductListStyle = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 30px 60px 25px #f906ed;
+  -moz-box-shadow: 0px 30px 60px 25px #f906ed;
+  box-shadow: 0px 30px 120px 25px #f906ed;
+  background-image: radial-gradient(
+    hsl(1, 10%, 10%, 10%) 15%,
+    hsl(302, 100%, 40%, 80%)
+  );
+  /* padding: 8px; */
+  /* width: 99%; */
+  margin: auto;
+  border-radius: 4px;
+  @media (max-width: 798px) {
+    justify-content: center;
+    gap: 16px;
+  }
+`
