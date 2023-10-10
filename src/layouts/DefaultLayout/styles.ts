@@ -7,7 +7,10 @@ export const LayoutContainer = styled.div`
   display: flex;
   /* gap: 3.2rem; */
   /* max-width: 1640px; */
+  max-width: 1440px;
   margin: auto;
+  padding: 3.2rem;
+
   @media (max-width: 1290px) {
     padding: 3.2rem 3rem;
     gap: 1.6rem;

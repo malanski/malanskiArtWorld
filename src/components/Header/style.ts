@@ -7,20 +7,24 @@ export const HeaderStyle = styled.header`
 
   h1 {
     text-align: center;
-    color: white;
-    width: 100%;
-    text-transform: uppercase;
     font-size: 25px;
+    margin-bottom: 32px;
+  }
+  h1 a {
+    color: white;
+    /* width: 100%; */
+    padding: 8px 16px;
   }
 `
 export const NavStyle = styled.nav`
-  width: 1440px;
-  padding: 2rem;
+  /* width: 1440px;
+  padding: 2rem; */
   margin: 0 auto;
   div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
   }
   a {
@@ -30,5 +34,8 @@ export const NavStyle = styled.nav`
     border: 1px solid white;
     text-transform: uppercase;
     /* display: flex; */
+  }
+  @media (max-width: 1440px) {
+    width: 100%;
   }
 `

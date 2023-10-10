@@ -38,13 +38,28 @@ export const CategoryNavigation = styled.div`
   max-width: 1440px;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: end;
   width: 100%;
+  margin: auto;
   a {
     /* display: flex; */
     text-align: center;
+    /* min-width: 85px; */
     width: 250px;
+
     border-bottom: 1px solid white;
     margin-bottom: 4px;
+    transition: all ease-in-out 400ms;
+  }
+  a:hover {
+    border-bottom-width: 2px;
+    transition: all ease-in-out 400ms;
+    color: white;
+    margin-bottom: 3px;
+  }
+  @media (max-width: 900px) {
+    a {
+      width: 180px;
+    }
   }
 `

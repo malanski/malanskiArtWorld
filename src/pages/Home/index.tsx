@@ -13,13 +13,20 @@ import image5 from '../../assets/intro/introDress5.jpg'
 import image6 from '../../assets/intro/introDress6.jpg'
 import image7 from '../../assets/intro/introDress7.jpg'
 import image8 from '../../assets/intro/introDress8.jpg'
-import image9 from '../../assets/intro/backPrint1.jpg'
-import image10 from '../../assets/intro/backPrint2.jpg'
-import image11 from '../../assets/intro/introBlanket.jpg'
-import image12 from '../../assets/intro/introApron.jpg'
-import image13 from '../../assets/intro/introClock.jpg'
-import image14 from '../../assets/intro/introMug.jpg'
-import image15 from '../../assets/intro/introMug2.jpg'
+import image9 from '../../assets/intro/introDress9.jpg'
+import image10 from '../../assets/intro/introDress10.jpg'
+import image11 from '../../assets/intro/introDress11.jpg'
+import image12 from '../../assets/intro/introDress12.jpg'
+import image13 from '../../assets/intro/introDress13.jpg'
+import image14 from '../../assets/intro/introDress14.jpg'
+import image15 from '../../assets/intro/backPrint1.jpg'
+import image16 from '../../assets/intro/backPrint2.jpg'
+
+import image19 from '../../assets/intro/introBlanket.jpg'
+import image20 from '../../assets/intro/introApron.jpg'
+import image21 from '../../assets/intro/introClock.jpg'
+import image22 from '../../assets/intro/introMug.jpg'
+import image23 from '../../assets/intro/introMug2.jpg'
 import { ProductCard } from '../../components/ProductCard'
 
 const introImagesArray = [
@@ -38,6 +45,12 @@ const introImagesArray = [
   image13,
   image14,
   image15,
+  image16,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
 ]
 
 const productsPerPage = 20
@@ -61,12 +74,10 @@ export function Home() {
       />
       <h2>All products</h2>
       <ProductListStyle>
-        {allData.map((product, index) => (
-          <ProductCard key={index} allData={currentProducts} data={product} />
+        {currentProducts.map((product, index) => (
+          <ProductCard key={index} data={product} />
         ))}
       </ProductListStyle>
-
-      {/* <ProductList allData={currentProducts} data={product}/> */}
     </PageStyle>
   )
 }

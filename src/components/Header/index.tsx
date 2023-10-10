@@ -22,9 +22,11 @@ function CustomLink({ children, to, ...props }: CustomLinkProps) {
 export const Header = () => {
   return (
     <HeaderStyle>
-      <CustomLink to="/" title="Home">
-        <h1>MalanskiArt World</h1>
-      </CustomLink>
+      <h1>
+        <CustomLink to="/" title="Home">
+          MalanskiArt World
+        </CustomLink>
+      </h1>
 
       <NavStyle>
         <div>

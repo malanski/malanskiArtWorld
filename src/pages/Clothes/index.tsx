@@ -12,8 +12,14 @@ import image5 from '../../assets/intro/introDress5.jpg'
 import image6 from '../../assets/intro/introDress6.jpg'
 import image7 from '../../assets/intro/introDress7.jpg'
 import image8 from '../../assets/intro/introDress8.jpg'
-import image9 from '../../assets/intro/backPrint1.jpg'
-import image10 from '../../assets/intro/backPrint2.jpg'
+import image9 from '../../assets/intro/introDress9.jpg'
+import image10 from '../../assets/intro/introDress10.jpg'
+import image11 from '../../assets/intro/introDress11.jpg'
+import image12 from '../../assets/intro/introDress12.jpg'
+import image13 from '../../assets/intro/introDress13.jpg'
+import image14 from '../../assets/intro/introDress14.jpg'
+import image15 from '../../assets/intro/backPrint1.jpg'
+import image16 from '../../assets/intro/backPrint2.jpg'
 
 import { IntroImages } from '../../components/IntroImages'
 
@@ -26,11 +32,17 @@ const introImagesArray = [
   image8,
   image9,
   image10,
+  image11,
+  image12,
   image1,
   image2,
   image3,
   image4,
   image5,
+  image13,
+  image14,
+  image15,
+  image16,
 ]
 
 const productsPerPage = 20
@@ -68,7 +80,7 @@ export function Clothes() {
     VNeckData,
   } = productsContext
   const dataSources = [
-    { name: 'Clothes', data: clothesData },
+    { name: 'All Clothes', data: clothesData },
     { name: 'A-Line Dress', data: ALineDressData },
     { name: 'Active T-Shirt', data: ActiveTShirtData },
     { name: 'Baseball T-Shirt', data: BaseballData },
@@ -104,7 +116,6 @@ export function Clothes() {
 
   const toggleDataSource = (index: SetStateAction<number>) => {
     setActiveDataIndex(index)
-    console.log(currentDataSource.data.length)
   }
   return (
     <PageStyle>
@@ -120,6 +131,9 @@ export function Clothes() {
               toggleDataSource(index)
               setCurrentPage(1)
             }}
+            className={`page-item ${
+              source.name === currentDataSource.name ? 'active' : ''
+            }`}
           >
             {source.name}
           </a>
@@ -141,11 +155,10 @@ export function Clothes() {
       )}
       <h2>{currentDataSource.name} View</h2>
       <ProductListStyle>
-        {allData.map((product, index) => (
-          <ProductCard key={index} allData={currentProducts} data={product} />
+        {currentProducts.map((product, index) => (
+          <ProductCard key={index} data={product} />
         ))}
       </ProductListStyle>
-      {/* <ProductList allData={currentProducts} /> */}
     </PageStyle>
   )
 }

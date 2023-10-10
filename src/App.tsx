@@ -5,7 +5,7 @@ import { AppLayout } from './styles.ts'
 
 function App() {
   return (
-    <AppLayout>
+    <AppLayout className="layout">
       <ProductsContextProvider>
         <BrowserRouter>
           <Router />

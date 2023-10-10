@@ -1,9 +1,18 @@
 import { useEffect, useState } from 'react'
-import { IProductData } from '../../context/productsContext'
-import { Modal, ProductCardAction, ProductCardStyle } from './styles'
+import {
+  Modal,
+  ModalContainer,
+  ModalDescription,
+  ModalInfoContainer,
+  ModalOptions,
+  ProductCardAction,
+  ProductCardButton,
+  ProductCardPrice,
+  ProductCardStyle,
+  ProductModalAction,
+} from './styles'
 
 interface IProps {
-  allData: IProductData[]
   data: {
     name: string
     image: string
@@ -19,8 +28,16 @@ export const ProductCard = (props: IProps) => {
   const [selectedProduct, setSelectedProduct] = useState<IProps['data'] | null>(
     null,
   )
+
   useEffect(() => {
-    document.body.className = isModalOpen ? 'modal-open' : ''
+    if (isModalOpen) {
+      document.body.classList.add('modal-open')
+    } else {
+      document.body.classList.remove('modal-open')
+    }
+    return () => {
+      document.body.classList.remove('modal-open')
+    }
   }, [isModalOpen])
 
   const openModal = (productData: IProps['data']) => {
@@ -37,21 +54,43 @@ export const ProductCard = (props: IProps) => {
       <p>{name}</p>
 
       <ProductCardAction>
-        <p>${price.toFixed(2).toString().replace('.', ',')}</p>
-        <div>Buy</div>
+        <ProductCardPrice>
+          <span>${price.toFixed(2).toString().replace('.', ',')}</span>
+        </ProductCardPrice>
+        <ProductCardButton title={`Buy ${name}`}>Buy</ProductCardButton>
       </ProductCardAction>
 
       {isModalOpen && selectedProduct && (
         <Modal>
-          <h1>{selectedProduct.name}</h1>
-          <p>
-            {options.map((option, index) => (
-              <div key={index}>{option}</div>
-            ))}
-          </p>
-          <p>{selectedProduct.price}</p>
-          <p>{selectedProduct.description}</p>
-          <p onClick={closeModal}>Fechar</p>
+          <ModalContainer>
+            <h3>{selectedProduct.name}</h3>
+            <img src={image} alt={name} onClick={() => openModal(props.data)} />
+            <ModalOptions>
+              <p>Sizes:</p>
+              {options.map((option, index) => (
+                <p key={index}>{option}</p>
+              ))}
+            </ModalOptions>
+            <ModalInfoContainer>
+              <ModalDescription>{selectedProduct.description}</ModalDescription>
+              <ProductModalAction>
+                <ProductCardPrice>
+                  <span>Price: ${selectedProduct.price}</span>
+                </ProductCardPrice>
+                <div>
+                  <ProductCardButton
+                    onClick={closeModal}
+                    title={`Buy ${selectedProduct.name}`}
+                  >
+                    Buy
+                  </ProductCardButton>
+                  <p title="Cancel" onClick={closeModal}>
+                    Back
+                  </p>
+                </div>
+              </ProductModalAction>
+            </ModalInfoContainer>
+          </ModalContainer>
         </Modal>
       )}
     </ProductCardStyle>

@@ -4,11 +4,10 @@ export const PageStyle = styled.div`
   /* display: flex;
   place-items: center; */
   position: relative;
-
-  max-width: 1440px;
+  /* padding: 8px 2rem;
+  max-width: 1440px; */
   margin: 0 auto;
   text-align: center;
-  padding: 8px 2rem;
 
   h5 {
     text-align: left;
@@ -30,13 +29,7 @@ export const ProductListStyle = styled.div`
   /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: space-between;
-  -webkit-box-shadow: 0px 30px 60px 25px #f906ed;
-  -moz-box-shadow: 0px 30px 60px 25px #f906ed;
-  box-shadow: 0px 30px 120px 25px #f906ed;
-  background-image: radial-gradient(
-    hsl(1, 10%, 10%, 10%) 15%,
-    hsl(302, 100%, 40%, 80%)
-  );
+
   /* padding: 8px; */
   /* width: 99%; */
   margin: auto;
