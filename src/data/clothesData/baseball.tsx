@@ -4,6 +4,8 @@ import MarshmallowHibiscus from '../../assets/clothes/baseball/Marshmallow-Hibis
 import CosmonautMeditates from '../../assets/clothes/baseball/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/baseball/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/baseball/Snake.jpg'
+import SnakeTattoo from '../../assets/clothes/baseball/SnakeTattoo.jpg'
+
 import BigButterfly from '../../assets/clothes/baseball/BigButterfly.jpg'
 
 const ItemDescription =
@@ -51,6 +53,13 @@ const BaseballData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

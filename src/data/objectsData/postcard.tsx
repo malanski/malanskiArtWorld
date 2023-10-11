@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/postcard/Marshmallow-Hibis
 import CosmonautMeditates from '../../assets/objects/postcard/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/postcard/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/postcard/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/postcard/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Unique artwork for posting words of wisdom or decorating your wall, fridge or office. Digitally printed cards on heavyweight stock. Uncoated reverse provides a superior writing surface.'
@@ -50,6 +51,13 @@ const PostcardData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

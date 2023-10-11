@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/apron/Marshmallow-Hibiscus
 import CosmonautMeditates from '../../assets/objects/apron/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/apron/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/apron/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/apron/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Stay clean in style when you're doing dirty work in the kitchen, in the art studio, in the garden, or at the BBQ. All-over sublimation print design. Durable neck band and extra-long black ties that wrap around to tie in front. One size fits most adults.Easy care, machine washable"
@@ -50,6 +51,13 @@ const ApronData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

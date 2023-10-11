@@ -12,18 +12,31 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
   totalPages,
   onPageChange,
 }) => {
+  const [scrollPosition, setScrollPosition] = React.useState<number>(0)
+
+  const handlePageChange = (page: number) => {
+    const currentPosition = window.scrollY
+    setScrollPosition(currentPosition)
+    onPageChange(page)
+    // scrollToElement('productList')
+  }
+
   const scrollToElement = (elementId: string) => {
     const element = document.getElementById(elementId)
     if (element) {
       const elementRect = element.getBoundingClientRect()
-      const elementY = window.scrollY + elementRect.top
-      const scrollY = elementY - window.innerHeight / 1.5
+      const offsetTop = elementRect.top + window.scrollY
+      const scrollY = offsetTop - window.innerHeight / 1.8
       window.scrollBy({ top: scrollY, behavior: 'smooth' })
     }
   }
 
+  React.useEffect(() => {
+    window.scrollTo(0, scrollPosition)
+  }, [currentPage, scrollPosition])
+
   return (
-    <ProductsListPagination id="productList">
+    <ProductsListPagination>
       <div>
         {Array(totalPages)
           .fill(0)
@@ -31,12 +44,9 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
             <span
               key={index}
               onClick={() => {
-                onPageChange(index + 1)
-                scrollToElement('productList')
+                handlePageChange(index + 1)
               }}
-              className={`page-item ${
-                index + 1 === currentPage ? 'active' : ''
-              }`}
+              className={`Page ${index + 1 === currentPage ? 'active' : ''}`}
             >
               <a href="#" title={`Página ${index + 1}`}>
                 {index + 1}

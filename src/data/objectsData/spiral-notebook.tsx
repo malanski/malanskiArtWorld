@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/objects/spiral-notebook/Geisha-Danci
 import MarshmallowHibiscus from '../../assets/objects/spiral-notebook/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/objects/spiral-notebook/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/objects/spiral-notebook/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/spiral-notebook/SnakeTattoo.jpg'
 import BeeSweet from '../../assets/objects/spiral-notebook/Bee-Sweet.jpg'
 
 const ItemDescription =
@@ -50,6 +51,13 @@ const SpiralNotebookData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

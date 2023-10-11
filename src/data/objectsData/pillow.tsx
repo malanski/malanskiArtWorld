@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/pillow/Marshmallow-Hibiscu
 import CosmonautMeditates from '../../assets/objects/pillow/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/pillow/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/pillow/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/pillow/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Accent cushions with original art, for that instant zhuzh factor in any room. Decorative and durable 100% spun polyester cover with an optional polyester fill/insert. Full-color double-sided design printed for you when you order. Concealed zip opening for a clean look and easy care. Machine washable. For a plump finish, use an insert/fill that is bigger than the cover'
@@ -50,6 +51,13 @@ const PillowData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

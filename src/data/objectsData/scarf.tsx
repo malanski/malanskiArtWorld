@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/objects/scarf/Geisha-Dancing-Fans.jp
 import MarshmallowHibiscus from '../../assets/objects/scarf/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/objects/scarf/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/objects/scarf/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/scarf/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Full print is visible on the front and reverse. Microfiber polyester with a slightly transparent effect. Hand wash only. Do not dry clean or tumble dry. Scarves may come with a small white border around the hem edge due to the inherent print & construction method of the garment'
@@ -39,10 +40,16 @@ const ScarfData = [
     description: ItemDescription,
     options: ItemOptions,
   },
-
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/clothes/a-line-dress/Geisha-Dancing-
 import MarshmallowHibiscus from '../../assets/clothes/a-line-dress/Marshmallow-Hibiscus.jpg'
 import BeeSweet from '../../assets/clothes/a-line-dress/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/a-line-dress/Snake.jpg'
+import SnakeTattoo from '../../assets/clothes/a-line-dress/SnakeTattoo.jpg'
 import BigButterfly from '../../assets/clothes/a-line-dress/BigButterfly.jpg'
 
 const ItemDescription =
@@ -43,6 +44,13 @@ const ALineDressData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

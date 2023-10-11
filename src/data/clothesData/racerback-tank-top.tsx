@@ -5,6 +5,7 @@ import CosmonautMeditates from '../../assets/clothes/racerback-tank-top/Cosmonau
 import BeeSweet from '../../assets/clothes/racerback-tank-top/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/racerback-tank-top/Snake.jpg'
 import BigButterfly from '../../assets/clothes/racerback-tank-top/BigButterfly.jpg'
+import SnakeTattoo from '../../assets/clothes/pullover-hoodie/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Chose colors(black, white, dark blue). Form-fitting shirt for women who like a feminine tank top. 100% cotton, generous arm openings and exceptionally smooth finish. Cold wash and hang out to dry. The third party printer of this product is evaluated according to International Labor Organization standards.'
@@ -51,6 +52,13 @@ const RacerbackData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

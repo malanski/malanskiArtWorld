@@ -5,6 +5,7 @@ import CosmonautMeditates from '../../assets/clothes/long-sleeve-t-shirt/Cosmona
 import BeeSweet from '../../assets/clothes/long-sleeve-t-shirt/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/long-sleeve-t-shirt/Snake.jpg'
 import BigButterfly from '../../assets/clothes/long-sleeve-t-shirt/BigButterfly.jpg'
+import SnakeTattoo from '../../assets/clothes/long-sleeve-t-shirt/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, white, cardinal, dark blue, heather grey, dark grey). Layer up in a soft long-sleeve tee, ideal for chilly days or chillier nights. Slim fit, so order a size up if you prefer for a more relaxed fit. Male model shown is 6'1'' / 186 cm tall and wearing size Large. Female model shown is 5'4'' / 163 cm tall and wearing size Small. Solid colors are 100% cotton, heathered and marled fabrics are 90% cotton, 10% polyester. The third party printer of this product is evaluated according to International Labor Organization standards. The printer of this product sources blanks from manufacturers that are participating members of the Fair Labor Association"
@@ -51,6 +52,13 @@ const LongSleeveData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

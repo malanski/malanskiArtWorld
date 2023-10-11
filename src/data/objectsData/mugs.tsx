@@ -2,6 +2,7 @@ import MarshmallowHibiscus from '../../assets/objects/mug/Marshmallow-Hibiscus.j
 import CosmonautMeditates from '../../assets/objects/mug/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/mug/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/mug/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/mug/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Coffee, tea, or art? Have it all with this eye-opening ceramic mug. Holds 11 oz. (325 ml). Mug diameter is 3.2'' (8.2 cm), not including handle.Dishwasher-safe ceramic. Wraparound design printed for you when you order"
@@ -34,6 +35,13 @@ const MugData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

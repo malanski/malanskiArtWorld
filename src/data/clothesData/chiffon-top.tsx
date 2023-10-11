@@ -5,6 +5,7 @@ import CosmonautMeditates from '../../assets/clothes/chiffon-top/Cosmonaut-medit
 import BeeSweet from '../../assets/clothes/chiffon-top/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/chiffon-top/Snake.jpg'
 import BigButterfly from '../../assets/clothes/chiffon-top/BigButterfly.jpg'
+import SnakeTattoo from '../../assets/clothes/chiffon-top/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Sheer and slightly silky with an edge-to-edge printed front panel, great for layering. Loose-cropped, boxy fit. Model shown is 5'5'' / 167 cm tall and wearing size Small. Sizes tend to run small, consider bumping a size for a comfortable fit. 100% polyester chiffon. Your choice of black or white back panel, sleeves, and binding. The third party printer of this product is evaluated according to International Labor Organization standards"
@@ -51,6 +52,13 @@ const ChiffonTopData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

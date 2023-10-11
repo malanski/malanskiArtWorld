@@ -83,13 +83,26 @@ export const ModalContainer = styled.div`
   padding: 0 32px;
   img {
     /* min-width: 250px; */
-    width: 30vw;
+    width: 25vw;
+  }
+  @media (max-width: 900px) {
+    img {
+      width: 30vw;
+    }
   }
   @media (max-width: 720px) {
     padding: 0 16px;
   }
+  @media (max-width: 600px) {
+    img {
+      width: 60vw;
+    }
+  }
   @media (max-width: 393px) {
     padding: 0 8px;
+    img {
+      width: 70vw;
+    }
   }
 `
 export const ModalInfoContainer = styled.div`
@@ -97,8 +110,24 @@ export const ModalInfoContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 32px;
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
   @media (max-width: 585px) {
+    gap: 4px;
+
     flex-direction: column;
+  }
+`
+export const ModalButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+
+  @media (max-width: 585px) {
+    gap: 4px;
   }
 `
 export const ProductModalAction = styled.div`
@@ -131,15 +160,33 @@ export const ModalDescription = styled.div`
   }
   @media (max-width: 585px) {
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
   }
 `
 export const ModalOptions = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 50%;
+  width: 90%;
+  padding: 16px 0;
+  span {
+    color: greenyellow;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin: 4px;
+    text-transform: uppercase;
+  }
+  @media (max-width: 630px) {
+    font-size: 14px;
+    padding: 8px 0;
+    span {
+      padding: 4px 0;
+      border: none;
+
+    }
+  }
 `
 export const ProductCardPrice = styled.div`
   span {

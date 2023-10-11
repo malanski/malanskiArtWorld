@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/comforter/Marshmallow-Hibi
 import CosmonautMeditates from '../../assets/objects/comforter/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/comforter/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/comforter/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/comforter/SnakeTattoo.jpg'
 
 const ItemDescription =
   "With this big, bold comforter, making your bed will be your favorite part of the day. Vivid full-color front printed for you when you order; back is white.100% polyester with 0.75'' (2 cm) polyester filling and double-square quilted pattern. Twin to King sizes available, and Twin XL fits most extra-long college dorm beds; check sizing guide for detailed measurements. Pillows and shams not included. Machine washable"
@@ -50,6 +51,13 @@ const ComforterData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

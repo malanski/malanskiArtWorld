@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/mini-skirt/Marshmallow-Hib
 import CosmonautMeditates from '../../assets/clothes/mini-skirt/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/clothes/mini-skirt/Snake.jpg'
 import BigButterfly from '../../assets/clothes/mini-skirt/BigButterfly.jpg'
+import SnakeTattoo from '../../assets/clothes/mini-skirt/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Repeated artwork on front and back. Constructed from 88% polyester, 12% elastane. Elastic waistband and stretchy knit fabric allows you to move. For in-between sizes, choose the larger size. Product dimensions refer to the garment measurements, not the measurements of the person. Machine washable. The third party printer of this product is evaluated according to International Labor Organization standards'
@@ -43,6 +44,13 @@ const MiniSkirtData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/clock/Marshmallow-Hibiscus
 import CosmonautMeditates from '../../assets/objects/clock/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/clock/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/clock/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/clock/SnakeTattoo.jpg'
 
 const ItemDescription =
   "It's always art o'clock when your clock is a work of art. Printed polypropylene face made for you when you order. Metal hands in your choice of colors. Bamboo wood frame in black, white, or natural finish. Quartz clock mechanism for accurate timekeeping. Clear plexiglass lens.  Built-in rear hook, ready to hang. AA battery not included"
@@ -50,6 +51,13 @@ const ClockData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

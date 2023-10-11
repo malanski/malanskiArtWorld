@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/magnet/Marshmallow-Hibiscu
 import CosmonautMeditates from '../../assets/objects/magnet/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/magnet/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/magnet/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/magnet/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Die-cut magnets add a touch of easily switchable flair to your fridge, locker, or file cabinet. Flexible, durable 20mil / 0.5mm vinyl. Vibrant color printing. Approximately 4mm white border around design. WARNING: Choking Hazard small parts. Not for children under 3.This product contains magnets. Swallowed magnets can stick together across intestines causing serious injuries. Seek immediate medical attention if magnets are swallowed.Not a toy. For decorative use only.'
@@ -50,6 +51,13 @@ const MagnetData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

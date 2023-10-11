@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/duvet/Marshmallow-Hibiscus
 import CosmonautMeditates from '../../assets/objects/duvet/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/duvet/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/duvet/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/duvet/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Removable, washable cover keeps your duvet fresh and your bedroom decor fresher. Printed 100% polyester top with white 50% polyester/50% cotton back. Concealed zipper opening and internal insert ties for easy assembly. Twin to King sizes available, and Twin fits most extra-long college dorm beds; check sizing guide for detailed measurements. Duvet insert not included. Machine washable'
@@ -50,6 +51,13 @@ const DuvetData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

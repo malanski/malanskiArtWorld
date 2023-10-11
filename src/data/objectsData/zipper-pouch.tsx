@@ -3,6 +3,7 @@ import GeishaDancingFans from '../../assets/objects/zipper-pouch/Geisha-Dancing-
 import MarshmallowHibiscus from '../../assets/objects/zipper-pouch/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/objects/zipper-pouch/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/objects/zipper-pouch/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/zipper-pouch/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Your rugged little personal valet: carry your makeup, pencils, phone, cards, anything. Available in three sizes: check the size chart to find the right one for you. Durable 100% polyester canvas with a metal zipper. Fully lined for added strength. Vibrant, high-quality double-sided design, printed for you when you order. Cold machine wash and low tumble dry'
@@ -42,6 +43,13 @@ const ZipperPouchData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

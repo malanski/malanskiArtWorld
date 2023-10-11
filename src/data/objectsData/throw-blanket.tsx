@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/throw-blanket/Marshmallow-
 import CosmonautMeditates from '../../assets/objects/throw-blanket/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/throw-blanket/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/throw-blanket/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/throw-blanket/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Drape your bed, your couch, or yourself in soft, fluffy art, 100% polyester fleece.Front features edge-to-edge design sublimation printed for you when you order. Reverse is off-white. Machine washable'
@@ -50,6 +51,13 @@ const ThrowBlanketData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

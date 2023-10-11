@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/shower-curtain/Marshmallow
 import CosmonautMeditates from '../../assets/objects/shower-curtain/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/shower-curtain/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/shower-curtain/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/shower-curtain/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Make your bathroom truly your own with a perfect-for-you shower curtain. Soft 100% polyester for a smooth, even drape. Vivid, full color print on the front, with a translucent white reverse side. 71 x 74" (180 x 188 cm) size fits most standard showers and tubs. 12 stitched button holes (rings not included). Liner not included. Machine wash cold'
@@ -50,6 +51,13 @@ const ShowerCurtainData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

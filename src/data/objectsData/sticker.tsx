@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/objects/sticker/Marshmallow-Hibisc
 import CosmonautMeditates from '../../assets/objects/sticker/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/objects/sticker/Bee-Sweet.jpg'
 import Snake from '../../assets/objects/sticker/Snake.jpg'
+import SnakeTattoo from '../../assets/objects/sticker/SnakeTattoo.jpg'
 
 const ItemDescription =
   'Decorate windows, personalize water bottles, or stick ‘em wherever. Removable, kiss-cut vinyl stickers. Super durable and water-resistant. 1/8 inch (3.2mm) transparent border around each design. Transparent with adhesive back, perfect for glass and plastic. Sticker types may be printed and shipped from different locations'
@@ -50,6 +51,13 @@ const StickerData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

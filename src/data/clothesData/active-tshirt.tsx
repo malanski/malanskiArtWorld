@@ -3,6 +3,8 @@ import GeishaDancingFans from '../../assets/clothes/active-tshirt/Geisha-Dancing
 import MarshmallowHibiscus from '../../assets/clothes/active-tshirt/Marshmallow-Hibiscus.jpg'
 import CosmonautMeditates from '../../assets/clothes/active-tshirt/Cosmonaut-meditates.jpg'
 import Snake from '../../assets/clothes/active-tshirt/Snake.jpg'
+import SnakeTattoo from '../../assets/clothes/active-tshirt/SnakeTattoo.jpg'
+
 import BigButterfly from '../../assets/clothes/active-tshirt/BigButterfly.jpg'
 
 const ItemDescription =
@@ -43,6 +45,13 @@ const ActiveTShirtData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

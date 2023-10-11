@@ -5,6 +5,7 @@ import CosmonautMeditates from '../../assets/clothes/essential-t-shirt/Cosmonaut
 import BeeSweet from '../../assets/clothes/essential-t-shirt/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/essential-t-shirt/Snake.jpg'
 import BigButterfly from '../../assets/clothes/essential-t-shirt/BigButterfly.jpg'
+import SnakeTattoo from '../../assets/clothes/essential-t-shirt/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, navy, red, blue, asphalt, green and more). Just your everyday smooth, comfy tee, a wardrobe staple. Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt. Male model shown is 6'0''/ 183 cm tall and wearing size Large. Female model shown is 5'8'' / 173 cm tall and wearing size Small. Midweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester. The third party printer of this product is evaluated according to International Labor Organization standards. The printer of this product sources blanks from manufacturers committed to improving cotton farming practices with the Better Cotton Initiative"
@@ -51,6 +52,13 @@ const EssentialTShirtData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

@@ -21,12 +21,19 @@ import image13 from '../../assets/intro/introDress13.jpg'
 import image14 from '../../assets/intro/introDress14.jpg'
 import image15 from '../../assets/intro/backPrint1.jpg'
 import image16 from '../../assets/intro/backPrint2.jpg'
+import image17 from '../../assets/intro/introClock2.jpg'
+import image18 from '../../assets/intro/introPillow.jpg'
 
 import image19 from '../../assets/intro/introBlanket.jpg'
 import image20 from '../../assets/intro/introApron.jpg'
 import image21 from '../../assets/intro/introClock.jpg'
 import image22 from '../../assets/intro/introMug.jpg'
 import image23 from '../../assets/intro/introMug2.jpg'
+import image24 from '../../assets/intro/introSketch.jpg'
+import image25 from '../../assets/intro/introShower.jpg'
+import image26 from '../../assets/intro/introApron2.jpg'
+import image27 from '../../assets/intro/introBag2.jpg'
+import image28 from '../../assets/intro/introBag.jpg'
 import { ProductCard } from '../../components/ProductCard'
 
 const introImagesArray = [
@@ -46,11 +53,18 @@ const introImagesArray = [
   image14,
   image15,
   image16,
+  image17,
+  image18,
   image19,
   image20,
   image21,
   image22,
   image23,
+  image24,
+  image25,
+  image26,
+  image27,
+  image28,
 ]
 
 const productsPerPage = 20
@@ -65,6 +79,13 @@ export function Home() {
   return (
     <PageStyle>
       <IntroImages introImagesArray={introImagesArray} />
+
+      <h2>All products</h2>
+      <ProductListStyle id="productList">
+        {currentProducts.map((product, index) => (
+          <ProductCard key={index} data={product} />
+        ))}
+      </ProductListStyle>
       <ProductsPagination
         currentPage={currentPage}
         totalPages={Math.ceil(allData.length / productsPerPage)}
@@ -72,12 +93,6 @@ export function Home() {
           setCurrentPage(page)
         }}
       />
-      <h2>All products</h2>
-      <ProductListStyle>
-        {currentProducts.map((product, index) => (
-          <ProductCard key={index} data={product} />
-        ))}
-      </ProductListStyle>
     </PageStyle>
   )
 }

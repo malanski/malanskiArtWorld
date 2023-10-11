@@ -4,6 +4,7 @@ import MarshmallowHibiscus from '../../assets/clothes/v-neck-fitted/Marshmallow-
 import CosmonautMeditates from '../../assets/clothes/v-neck-fitted/Cosmonaut-meditates.jpg'
 import BeeSweet from '../../assets/clothes/v-neck-fitted/Bee-Sweet.jpg'
 import Snake from '../../assets/clothes/v-neck-fitted/Snake.jpg'
+import SnakeTattoo from '../../assets/clothes/v-neck-fitted/SnakeTattoo.jpg'
 
 const ItemDescription =
   "Chose artwork print location on front or back. Chose colors(black, white, heather grey, dark grey, navy, blue, red).Go from couch to club with a medium-deep v-neck and flattering fitted cut. Slim fit, so size up for a looser fit. Model shown is 5'11'' / 180 cm tall and wearing size Medium. Made of 60% combed ring-spun cotton, 40% polyester. Cold wash and hang dry to preserve your print. The third party printer of this product is evaluated according to International Labor Organization standards. The printer of this product sources blanks from manufacturers that are participating members of the Fair Labor Association"
@@ -50,6 +51,13 @@ const VNeckData = [
   {
     name: `Snake ${category}`,
     image: Snake,
+    price: ItemPrice,
+    description: ItemDescription,
+    options: ItemOptions,
+  },
+  {
+    name: `Snake Tattoo ${category}`,
+    image: SnakeTattoo,
     price: ItemPrice,
     description: ItemDescription,
     options: ItemOptions,

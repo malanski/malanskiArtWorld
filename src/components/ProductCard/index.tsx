@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
   Modal,
+  ModalButtonContainer,
   ModalContainer,
   ModalDescription,
   ModalInfoContainer,
@@ -63,21 +64,22 @@ export const ProductCard = (props: IProps) => {
       {isModalOpen && selectedProduct && (
         <Modal>
           <ModalContainer>
-            <h3>{selectedProduct.name}</h3>
             <img src={image} alt={name} onClick={() => openModal(props.data)} />
-            <ModalOptions>
-              <p>Sizes:</p>
-              {options.map((option, index) => (
-                <p key={index}>{option}</p>
-              ))}
-            </ModalOptions>
+
             <ModalInfoContainer>
               <ModalDescription>{selectedProduct.description}</ModalDescription>
               <ProductModalAction>
+                <h3>{selectedProduct.name}</h3>
+
                 <ProductCardPrice>
                   <span>Price: ${selectedProduct.price}</span>
                 </ProductCardPrice>
-                <div>
+                <ModalOptions>
+                  {options.map((option, index) => (
+                    <span key={index}>{option}</span>
+                  ))}
+                </ModalOptions>
+                <ModalButtonContainer>
                   <ProductCardButton
                     onClick={closeModal}
                     title={`Buy ${selectedProduct.name}`}
@@ -87,7 +89,7 @@ export const ProductCard = (props: IProps) => {
                   <p title="Cancel" onClick={closeModal}>
                     Back
                   </p>
-                </div>
+                </ModalButtonContainer>
               </ProductModalAction>
             </ModalInfoContainer>
           </ModalContainer>
