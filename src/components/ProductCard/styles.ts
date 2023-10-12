@@ -184,7 +184,6 @@ export const ModalOptions = styled.div`
     span {
       padding: 4px 0;
       border: none;
-
     }
   }
 `

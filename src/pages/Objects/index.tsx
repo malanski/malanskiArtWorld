@@ -100,7 +100,7 @@ export function Objects() {
   return (
     <PageStyle>
       <IntroImages introImagesArray={introImagesArray} />
-      <h5>Categories</h5>
+      {/* <h5>Categories</h5> */}
 
       <CategoryNavigation>
         {dataSources.map((source, index) => (

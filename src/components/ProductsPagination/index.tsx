@@ -21,15 +21,15 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
     // scrollToElement('productList')
   }
 
-  const scrollToElement = (elementId: string) => {
-    const element = document.getElementById(elementId)
-    if (element) {
-      const elementRect = element.getBoundingClientRect()
-      const offsetTop = elementRect.top + window.scrollY
-      const scrollY = offsetTop - window.innerHeight / 1.8
-      window.scrollBy({ top: scrollY, behavior: 'smooth' })
-    }
-  }
+  // const scrollToElement = (elementId: string) => {
+  //   const element = document.getElementById(elementId)
+  //   if (element) {
+  //     const elementRect = element.getBoundingClientRect()
+  //     const offsetTop = elementRect.top + window.scrollY
+  //     const scrollY = offsetTop - window.innerHeight / 1.8
+  //     window.scrollBy({ top: scrollY, behavior: 'smooth' })
+  //   }
+  // }
 
   React.useEffect(() => {
     window.scrollTo(0, scrollPosition)
